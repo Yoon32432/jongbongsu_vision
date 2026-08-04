@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# 가상환경 (절대경로가 박혀 있어 다른 머신에서 재사용 불가)
+.venv/
+venv/
+
+# 학습 데이터 / 산출물 — 용량이 커서 git 히스토리에 넣지 않는다.
+# 새 머신에서는 별도 아카이브(bagvision-assets.tar.gz)로 옮긴다.
+data/*
+!data/README.md
+models/
+*.pt
+
+# 실행 로그
+logs/
+
+# 에디터 / OS
+.vscode/
+.idea/
+.DS_Store
