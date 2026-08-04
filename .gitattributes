@@ -1,0 +1,13 @@
+# 리눅스/윈도우를 오가며 작업하므로 텍스트 파일은 어느 쪽에서 체크아웃하든 LF로 통일한다.
+# (CRLF 차이로 diff 전체가 변경된 것처럼 보이는 것을 막는다)
+* text=auto eol=lf
+
+# 바이너리는 줄바꿈 변환 대상에서 제외 — 변환되면 파일이 손상된다.
+# 현재는 .gitignore로 제외돼 있지만 실수로 강제 추가되는 경우를 대비한다.
+*.pt binary
+*.pth binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.bag binary
