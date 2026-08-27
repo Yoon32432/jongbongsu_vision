@@ -28,7 +28,7 @@ class FakeModel:
     def __init__(self, result):
         self._result = result
 
-    def predict(self, image, conf, verbose):
+    def predict(self, image, conf, verbose, **kwargs):
         return [self._result]
 
 
@@ -66,7 +66,7 @@ def test_detect_returns_empty_list_when_no_masks():
     assert detector.detect(color_image) == []
 
 
-WEIGHTS_PATH = "models/bagvision-4/weights/best.pt"
+WEIGHTS_PATH = "models/bagvision-5/weights/best.pt"
 
 
 @pytest.mark.skipif(not os.path.exists(WEIGHTS_PATH), reason="학습된 가중치 없음 (Task 9 선행 필요)")

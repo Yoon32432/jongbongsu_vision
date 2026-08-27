@@ -24,3 +24,12 @@ logs/
 .vscode/
 .idea/
 .DS_Store
+
+# 툴 설정 / 메모 (코드 아님)
+.claude/
+memory/
+
+# 원본 영상 / 개인 문서 — 용량 큼, git에 안 넣음
+*.mp4
+*.pdf
+*.png
